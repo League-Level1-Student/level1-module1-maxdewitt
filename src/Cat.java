@@ -30,7 +30,7 @@ public class Cat {
 
 	public void printName() {
 		if (name == null)
-			System.out.println("i don't know my own name!");
+			System.out.println("I don't know my own name!");
 		else
 			System.out.println("my name is " + name);
 	}
