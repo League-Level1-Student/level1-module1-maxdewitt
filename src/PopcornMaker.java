@@ -7,6 +7,8 @@ public class PopcornMaker {
 		Microwave wave = new Microwave();
 		
 		String timer = JOptionPane.showInputDialog("Set the microwave timer.");
+		int timer1 = Integer.parseInt(timer);
+		wave.hashCode(timer1);
 	}
 
 
