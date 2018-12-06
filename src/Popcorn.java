@@ -10,25 +10,25 @@
  * Ask the user for the flavor of the popcorn and the number of minutes to cook it.
  *  Don't change the existing methods.
  */
-
+/////////////////////////////////////////////////////////////////////////////////
 class Microwave {
 	private int cookTime;
 	Popcorn thingToBeCooked;
-
+/////////////////////////////////////////////////////////////////////////////////
 	Microwave() {
 		System.out.println("Microwave says: a Microwave has been made.");
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	void putInMicrowave(Popcorn thingToBeCooked) {
 		System.out.println("Microwave says: popcorn put in microwave.");
 		this.thingToBeCooked = thingToBeCooked;
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	void setTime(int cookTimeInMinutes) {
 		this.cookTime = cookTimeInMinutes;
 		System.out.println("Microwave says: cook time is set to " + cookTime + " minutes.");
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	void startMicrowave() {
 		if (thingToBeCooked == null) {
 			System.out.println("Microwave says: there's nothing in the microwave!");
@@ -40,7 +40,7 @@ class Microwave {
 		}
 	}
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public class Popcorn {
 
 	private int kernels = 20;
@@ -51,7 +51,7 @@ public class Popcorn {
 		this.flavor = flavor;
 		System.out.println("Popcorn says: making package of " + this.flavor + " popcorn.");
 	}
-
+/////////////////////////////////////////////////////////////////////////////////
 	public void eat() {
 		if (isCooked) {
 			System.out.println("Popcorn says: Time to eat popcorn!");
@@ -59,7 +59,7 @@ public class Popcorn {
 			System.out.println("Don't eat the popcorn. Not all the kernels have popped!");
 		}
 	}
-	
+///////////////////////////////////////////////////////////////////////////////////	
 	public void applyHeat() {
 		pause();
 
@@ -70,7 +70,7 @@ public class Popcorn {
 			kernels--;
 		}
 	}
-
+/////////////////////////////////////////////////////////////////////////////////////
 	private void pause() {
 		try {
 			Thread.sleep(150);
@@ -80,5 +80,5 @@ public class Popcorn {
 	}
 	
 }
-
+///////////////////////////////////////////////////////////////////////////////////////
 
