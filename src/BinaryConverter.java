@@ -42,15 +42,16 @@ b.makeGui();
 	
 	
 }
-
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+JButton button = new JButton();
+JTextField text = new JTextField(20);
+JTextField text1 = new JTextField(20);
+JLabel label = new JLabel();
 
  void makeGui() {
-	JFrame frame = new JFrame();
-	JPanel panel = new JPanel();
-	JButton button = new JButton();
-	JTextField text = new JTextField(20);
-	JTextField text1 = new JTextField(20);
-	JLabel label = new JLabel();
+	 
+	
 	frame.add(panel);
 	panel.add(button);
 	panel.add(text1);
@@ -63,6 +64,7 @@ b.makeGui();
 	
 	
 	
+	
 }
 
 
@@ -72,7 +74,9 @@ b.makeGui();
 
 @Override
 public void actionPerformed(ActionEvent arg0) {
-	
-	
+	String answer;
+	answer = text.getText();
+	String convertion = convert(answer);
+	text1.setText(convertion);
 }
 }
